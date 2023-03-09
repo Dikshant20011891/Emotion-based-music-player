@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <!-- /static/style/happy.css -->
+    <!-- {{ url_for('static', filename=emotion) }} -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/css/default.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename=emotion) }}">
+</head>
+
+<body>
+    <h1>{{type}} songs</h1>
+    <div class="container">
+        <h2>{{song}}</h2>
+
+        <!-- {{song_img}} -->
+        <!-- /static/style/happy_img/happy1.jpg -->
+        <img src="{{song_img}}" class="music_img" alt="song">
+
+        <audio controls="controls" class="player" autoplay>
+            <!-- /static/songs/happy/Cant Stop The Feeling Justin Timberlake.mp3 -->
+            <!-- {{dir + '/' + song}} -->
+            <source src="{{dir + '/' + song}}" type="audio/mpeg">
+        </audio>
+        
+    </div>
+    <br>
+    <form action="/songs" method='post'>
+        <input type="submit" name="previous" class="prev" value="">
+        <input type="submit" name="next" class="next" value="">
+    </form>
+    <form action="/">
+        <input type="submit" value="Return" class="return">
+    </form>
+
+</body>
+
+</html>

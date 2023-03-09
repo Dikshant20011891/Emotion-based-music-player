@@ -1,0 +1,77 @@
+body
+{
+    background-size: cover;
+    text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+h2{
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.container{
+    height: 29rem;
+    width: 25rem;
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+}
+
+.music_img{
+    height: 15rem;
+    width: 17rem;
+    display: block;
+    margin: 2rem auto 2.5rem auto;
+    border: 5px solid black;
+}
+
+.player
+{
+    width: 23rem;
+}
+
+.prev{
+    background-image: url('../previous.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 37%;
+    left: 29%;
+}
+
+.next{
+    background-image: url('../next.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 37%;
+    right: 29%;
+}
+
+.return
+{
+    background-color:#3A4F7A;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10rem;
+    align-items: center;
+}
+
+.return:hover{
+    background-color:white;
+    color: #3A4F7A;
+}

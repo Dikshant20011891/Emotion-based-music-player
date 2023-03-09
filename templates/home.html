@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <!-- /static/style/welcome.css -->
+        <link rel = "stylesheet" href="{{ url_for('static', filename='style/css/welcome.css') }}">
+    </head>
+  <body>
+        <h1>Emotion Based Music Player</h1>
+        <img src="{{ url_for('video_feed') }}" alt="Look Here" class="center">
+        <br>
+        <form action="/songs" method='post'>
+            <input type="submit" class="btn" name = "angry" value="Angry">
+            <input type="submit" class="btn" name = "happy" value="Happy">
+            <input type="submit" class="btn" name = "neutral" value="Neutral">
+            <input type="submit" class="btn" name = "sad" value="Sad">
+            <input type="submit" class="play" value =" ">
+        </form>
+    </body>
+</html>
