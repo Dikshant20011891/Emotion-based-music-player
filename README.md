@@ -1,11 +1,13 @@
 # Overview
 
-This project is a Python and Flask-based web application that combines facial emotion recognition with dynamic music playback. The goal of this project is to provide users with an interactive experience that recognizes their emotions based on their facial expressions and plays music that aligns with their emotional state.
+Developed an innovative Emotion-Based Music Player that utilizes Convolutional Neural Networks (CNN) for real-time emotion analysis and Flask for the web framework, delivering a personalized and emotionally responsive music listening experience.
 
 ## Features
 
-- **Facial Emotion Recognition:** The application utilizes a Convolutional Neural Network (CNN) model, trained on a Kaggle dataset, achieving an accuracy rate of 83% in emotion recognition. Users' facial expressions are analyzed to determine their emotional state accurately.
-
+- **Real-time Emotion Analysis:** Employs a CNN model to analyze users' facial expressions in real-time, accurately recognizing a range of emotions i.e, Angry, sad, neutral, and happy.
+  
 - **Music Integration:** The application dynamically selects and plays music that corresponds to the recognized emotional state. It tailors the music experience to the user's emotions, offering cheerful tunes for happiness or soothing melodies for sadness.
 
-- **Web-Based Interface:** Built on the Flask web framework, the application provides a user-friendly web interface for easy interaction. Users can capture their facial expressions using their device's camera and enjoy an emotion-based music selection.
+- **User-Friendly Web Interface:** Offers an intuitive web-based platform, accessible from various devices, for easy and seamless interaction.
+  
+- **Flask Web Framework:** Utilizes Flask to create a responsive and dynamic web application, enabling users to access the music player effortlessly.
